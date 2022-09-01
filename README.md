@@ -9,7 +9,7 @@ Simple and hackable request for dart.
 
     ```yaml
     dependencies:
-        cronos:
+        hequest:
             git:
                 url: https://github.com/teixeirazeus/hequest
     ```
