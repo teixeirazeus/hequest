@@ -1,7 +1,8 @@
 name: hequest
 description: Simple and hackable request for dart. Built on top of the http package.
 version: 0.0.1
-homepage:
+homepage: http://thiagoteixeira.dev/
+repository: https://github.com/teixeirazeus/hequest
 
 environment:
   sdk: ">=2.17.6 <3.0.0"
