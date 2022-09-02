@@ -15,7 +15,7 @@ class Hequest {
     return await http.get(Uri.parse(baseUrl + route));
   }
 
-  Future<Response> getWithAuth(String route, String token) async {
+  Future<Response> getWithToken(String route, String token) async {
     return await http.get(
       Uri.parse(baseUrl + route),
       headers: <String, String>{
@@ -34,7 +34,7 @@ class Hequest {
     );
   }
 
-  Future<Response> postWithAuth(
+  Future<Response> postWithToken(
       String route, String token, Map<dynamic, dynamic> jsonMap) async {
     return await http.post(
       Uri.parse(baseUrl + route),
@@ -56,7 +56,7 @@ class Hequest {
     );
   }
 
-  Future<Response> putWithAuth(
+  Future<Response> putWithToken(
       String route, String token, Map<dynamic, dynamic> jsonMap) async {
     return await http.put(
       Uri.parse(baseUrl + route),
@@ -68,7 +68,7 @@ class Hequest {
     );
   }
 
-  Future<Response> deleteWithAuth(String route, String token) async {
+  Future<Response> deleteWithToken(String route, String token) async {
     return await http.delete(
       Uri.parse(baseUrl + route),
       headers: <String, String>{
@@ -82,7 +82,7 @@ class Hequest {
     return await http.delete(Uri.parse(baseUrl + route));
   }
 
-  Future<Response> deleteWithAuthNBody(
+  Future<Response> deleteWithTokenNBody(
       String route, String token, Map<String, dynamic> jsonMap) async {
     return await http.delete(
       Uri.parse(baseUrl + route),
