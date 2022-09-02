@@ -6,15 +6,19 @@ import 'package:http/http.dart' as http;
 import 'package:http/http.dart';
 
 class Hequest {
+  /// The base URL for the API.
   String baseUrl;
+
   Hequest({
     required this.baseUrl,
   });
 
+  /// GET request
   Future<Response> get(String route) async {
     return await http.get(Uri.parse(baseUrl + route));
   }
 
+  /// GET request with token authentication
   Future<Response> getWithToken(String route, String token) async {
     return await http.get(
       Uri.parse(baseUrl + route),
@@ -24,6 +28,7 @@ class Hequest {
     );
   }
 
+  /// POST request
   Future<Response> post(String route, Map<dynamic, dynamic> jsonMap) async {
     return await http.post(
       Uri.parse(baseUrl + route),
@@ -34,6 +39,7 @@ class Hequest {
     );
   }
 
+  /// POST request with token authentication
   Future<Response> postWithToken(
       String route, String token, Map<dynamic, dynamic> jsonMap) async {
     return await http.post(
@@ -46,6 +52,7 @@ class Hequest {
     );
   }
 
+  /// PUT request
   Future<Response> put(String route, Map<dynamic, dynamic> jsonMap) async {
     return await http.put(
       Uri.parse(baseUrl + route),
@@ -56,6 +63,7 @@ class Hequest {
     );
   }
 
+  /// PUT request with token authentication
   Future<Response> putWithToken(
       String route, String token, Map<dynamic, dynamic> jsonMap) async {
     return await http.put(
@@ -68,6 +76,7 @@ class Hequest {
     );
   }
 
+  /// DELETE request with token authentication
   Future<Response> deleteWithToken(String route, String token) async {
     return await http.delete(
       Uri.parse(baseUrl + route),
@@ -78,10 +87,12 @@ class Hequest {
     );
   }
 
+  /// DELETE request
   Future<Response> delete(String route) async {
     return await http.delete(Uri.parse(baseUrl + route));
   }
 
+  /// DELETE request with token authentication and body
   Future<Response> deleteWithTokenNBody(
       String route, String token, Map<String, dynamic> jsonMap) async {
     return await http.delete(
