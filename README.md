@@ -1,5 +1,5 @@
 ![banner](https://raw.githubusercontent.com/teixeirazeus/hequest/master/readme_assets/banner.png)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/ca9452a2e4a745718e59fc8ca54de6e2)](https://www.codacy.com/gh/teixeirazeus/hequest/dashboard?utm_source=github.com\&utm_medium=referral\&utm_content=teixeirazeus/hequest\&utm_campaign=Badge_Grade)[![License](https://raw.githubusercontent.com/teixeirazeus/hequest/master/readme_assets/mit.svg)](https://github.com/teixeirazeus/hequest)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/ca9452a2e4a745718e59fc8ca54de6e2)](https://www.codacy.com/gh/teixeirazeus/hequest/dashboard?utm_source=github.com\&utm_medium=referral\&utm_content=teixeirazeus/hequest\&utm_campaign=Badge_Grade)[![License](https://raw.githubusercontent.com/teixeirazeus/hequest/3bb5c5adb73020d036563be2a155210562789f22/readme_assets/mit.svg)](https://github.com/teixeirazeus/hequest)
 
 Simple and hackable request for dart.
 
