@@ -90,7 +90,7 @@ class GithubApi {
       if (response.statusCode == 200) {
         return json.decode(response.body);
       } else if (response.statusCode == 404) {
-        return throw Exception('User not found');
+        throw Exception('User not found');
       } else {
         throw Exception('Failed to load user');
       }
