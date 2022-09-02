@@ -1,4 +1,3 @@
-// Copyright 2021 DevHops. All rights reserved.
 library hequest;
 
 import 'dart:convert';
