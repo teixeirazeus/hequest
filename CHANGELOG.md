@@ -5,3 +5,7 @@
 ## 0.0.2
 
 *   better documentation
+
+## 0.0.3
+
+*   better documentation
