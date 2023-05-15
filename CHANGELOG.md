@@ -9,3 +9,7 @@
 ## 0.0.3
 
 *   better documentation
+
+## 0.0.4
+
+*   patch request

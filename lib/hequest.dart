@@ -109,6 +109,41 @@ class Hequest {
     );
   }
 
+  /// PATCH request
+  ///
+  /// [route] is the route to the endpoint.
+  /// Example: /users
+  /// [jsonMap] is the JSON map to send in the request body.
+  /// Returns a [Response] object.
+  Future<Response> patch(String route, Map<dynamic, dynamic> jsonMap) async {
+    return await http.patch(
+      Uri.parse(baseUrl + route),
+      headers: <String, String>{
+        'Content-Type': 'application/json; charset=UTF-8'
+      },
+      body: jsonEncode(jsonMap),
+    );
+  }
+
+  /// PATCH request with token authentication
+  ///
+  /// [route] is the route to the endpoint.
+  /// Example: /users
+  /// [token] is the token to authenticate the request.
+  /// [jsonMap] is the JSON map to send in the request body.
+  /// Returns a [Response] object.
+  Future<Response> patchWithToken(
+      String route, String token, Map<dynamic, dynamic> jsonMap) async {
+    return await http.patch(
+      Uri.parse(baseUrl + route),
+      headers: <String, String>{
+        'Content-Type': 'application/json; charset=UTF-8',
+        'Authorization': 'Bearer $token',
+      },
+      body: jsonEncode(jsonMap),
+    );
+  }
+
   /// DELETE request with token authentication
   ///
   /// [route] is the route to the endpoint.
